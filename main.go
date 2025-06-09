@@ -5,13 +5,18 @@ import (
 	"strings"
 )
 
-func searchPerson(users []string, search string) string {
+func searchPerson(users []string, search string) {
+	result:=""
 	for _, person := range users {
 		if strings.Contains(strings.ToLower(person), strings.ToLower(search)) {
-			return person
+			result = person
 		}
 	}
-	return "Data tidak ditemukan"
+	if result != ""{
+	fmt.Println(result)
+	}else{
+		fmt.Println("Data tidak ditemukan")
+	}
 }
 
 func main(){
@@ -27,6 +32,7 @@ func main(){
 		"Clementina DuBuque",
 	}
 	
-	result := searchPerson(users, "clement")
-	fmt.Println(result) // Output: Bob
+	// result := searchPerson(users, "clement")
+	// fmt.Println(result)
+	searchPerson(users, "clement")
 }
