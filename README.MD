@@ -1,6 +1,6 @@
 # Golang Example Project - Search Person
 
-This repository contains Go project Minitask with Golang basic Slice example. This application is related to searching data in the slice
+This repository contains Go project Minitask with Golang basic Slice & Module example. This application is a simple example of using slices in the Go programming language to store and search for data, such as user information. It is built using a modular approach, where the search functionality is separated into its own module to ensure better structure, readability, and maintainability.
 
 ## How to Run
 
